@@ -1,0 +1,15 @@
+doctype html
+head
+  title=`Editing ${name}`
+  link(rel='stylesheet', href='/css/edit.css')
+body
+  #toolbar
+    button#black(type='button') Black
+    button#blue(type='button') Blue
+    button#red(type='button') Red
+    button#green(type='button') Green
+    button#yellow(type='button') Yellow 
+    button#clear(type='button') &#x232B;
+  #editor
+  script!=`window.file = "${name}"`
+  script(src='/js/edit.js')
