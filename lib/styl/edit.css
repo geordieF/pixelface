@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  background: #123;
+}
+#editor {
+  background-color: #fff;
+  border-radius: 0.25em;
+  margin: 1rem auto;
+  display: block;
+  width: 512px;
+  overflow: hidden;
+}

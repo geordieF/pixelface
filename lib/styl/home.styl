@@ -1,0 +1,167 @@
+$wide = 60rem
+$bg = #efefef
+
+body
+    font-family sans-serif
+    margin 1rem
+    overflow auto
+    max-height 100vh
+    > header
+        background #fff
+        position absolute
+        top 0
+        left 0
+        display flex
+        right 0
+        > h1
+            font-size 2rem
+            font-weight normal
+            padding 0.5rem
+            flex 1
+            max-width $wide + 4
+            margin 0.5rem auto
+        a.btn
+            margin-right 1rem
+            padding 0.25rem 1rem
+            text-align right
+            max-width 3rem
+            font-size 2.5rem
+            flex 1
+h1
+    width 100%
+    max-width $wide
+    margin 1rem auto
+a.btn
+    padding: 1rem
+    background #34f
+    color #fff
+    display inline-block
+    margin 0.5rem
+    margin-right 0.5rem
+    margin-left 0
+    text-decoration none
+    &:hover
+        background lighten(#34f, 15%)
+    &:active
+        background darken(#34f, 15%)
+    &.orange
+        background tomato
+        &:hover
+            background lighten(tomato, 15%)
+        &:active
+            background darken(tomato, 15%)
+article
+    margin 0
+    ul, ol
+        padding-left 1.5rem !important
+    &:first-of-type
+        margin-top 5rem
+    &:last-of-type
+        margin-bottom 1rem
+    > *, main > *
+        font-weight normal
+        width 100%
+        margin 0.25rem auto
+        display block
+        padding 0 0
+        max-width: $wide
+        box-sizing border-box
+    h2
+        font-size 1.75rem
+    h3
+        font-size 1.25rem
+    main
+        margin 0
+        padding 0
+        max-width unset
+    > .title
+        background #282c34
+        margin 1rem -1rem
+        width calc(100% + 2rem)
+        color #abb2bf
+        max-width unset
+        padding 1rem 2rem
+        .by, .caption
+            display block
+            width 100%
+            max-width $wide
+            margin 0 auto
+            span
+                color #fff
+        .caption
+            font-size 1.75rem
+            color #fff
+            margin-bottom 0.25rem
+    pre
+        margin 1rem -1rem
+        background $bg
+        padding: 1rem
+        font-family monospace
+        max-width unset
+        width calc(100% + 2rem)
+        code
+            margin 0 auto
+            display block
+            max-width $wide - 2
+            max-height 70vh
+            overflow auto
+            &::-webkit-scrollbar
+                width 0.5rem
+                height 0.5rem
+
+            &::-webkit-scrollbar-corner
+                background none
+
+            &::-webkit-scrollbar-track
+                background darken($bg, 10%)
+                border-radius 0.25rem
+
+            &::-webkit-scrollbar-thumb
+                border-radius 0.25rem
+                background darken($bg, 30%)
+
+            &::-webkit-scrollbar-thumb:hover
+                border-radius 0.25rem
+                background darken($bg, 40%)
+
+            &::-webkit-scrollbar-thumb:active
+                border-radius 0.25rem
+                background darken($bg, 50%)
+::-webkit-scrollbar {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+::-webkit-scrollbar-corner {
+    background: none;
+
+}
+
+::-webkit-scrollbar-track {
+    background darken($bg, 10%)
+}
+
+::-webkit-scrollbar-thumb {
+    background darken($bg, 30%)
+}
+::-webkit-scrollbar-thumb:hover {
+    background darken($bg, 40%)
+}
+::-webkit-scrollbar-thumb:active {
+    background darken($bg, 50%)
+}
+
+blockquote
+  margin 0 -1rem !important
+  width calc(100% + 2rem) !important
+  max-width unset !important
+  padding 0 !important
+  font-size 1.25rem
+  p
+    margin 0 auto
+    width 100%
+    max-width $wide + 0.8
+    padding 1.25rem
+    box-sizing border-box
+    background darken(gainsboro, 5%)
+    border-left solid 0.4rem darken(gainsboro, 25%)
