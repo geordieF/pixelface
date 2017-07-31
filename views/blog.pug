@@ -1,0 +1,21 @@
+doctype html
+head
+    //
+        Geordie's code, no template stuff.
+    title Blag
+    link(rel='stylesheet', href='/css/home.css')
+    link(rel='stylesheet', href='/css/hljs/atom-one-light.css')
+body
+    header
+        if home
+            a(href='/blog').btn &#x2039;
+        else
+            a(href='/').btn &#x2302;
+        h1
+            | &#x1F937; BLEG
+    for i in data
+        article
+            .title
+                .caption=i.name
+                .by!=`Posted by <span>${i.by}</span> on <span>${i.date}</span>`
+            main!=i.content
